@@ -1,0 +1,61 @@
+.flex-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 10px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.flex-container .card {
+  background-color: #f76161;
+  height: 600px;
+  width: 300px;
+  margin: 20px;
+  padding: 20px;
+  border: black 1px solid;
+}
+
+p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  line-height: 40px;
+  font-style: italic;
+  -webkit-text-decoration: wavy 1px blue;
+          text-decoration: wavy 1px blue;
+  color: #000e0e;
+  text-align: center;
+}
+
+.titulo {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  line-height: 40px;
+  font-style: italic;
+  -webkit-text-decoration: wavy 1px blue;
+          text-decoration: wavy 1px blue;
+  color: #000e0e;
+  text-align: center;
+  height: 100px;
+  width: 200px;
+  background-color: yellow;
+  border: green 2px solid;
+}
+
+.titulo-secundario {
+  height: 300px;
+  width: 300px;
+  background-color: orange;
+  border: 2px solid black;
+}
+
+.titulo-secundario-error {
+  width: 50px;
+  height: 50px;
+  background-color: white;
+}
+/*# sourceMappingURL=mainsass.css.map */

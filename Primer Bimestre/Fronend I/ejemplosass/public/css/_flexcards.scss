@@ -1,0 +1,16 @@
+$mainColor: rgb(247, 97, 97);
+$altColor: rgb(8, 8, 61);
+.flex-container {
+    display: flex;
+    margin: 10px;
+    justify-content: center;
+    align-items: center;
+    .card {
+        background-color: $mainColor;
+        height: 600px;
+        width: 300px;
+        margin: 20px;
+        padding: 20px;
+        border: black 1px solid;
+    }
+}

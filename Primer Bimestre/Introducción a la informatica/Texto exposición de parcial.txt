@@ -1,0 +1,31 @@
+Componenetes internos 
+Motherboard 
+Es la placa principal de cualquier computadora, al que todos los demás dispositivos se conectan,tanto de manera directa (como los circuitos eléctricos interconectados),como indirecta (a través de puertos USB u otro tipo de conectores).
+
+Procesador
+También llamado unidad central deprocesamiento o CPU, es el “cerebro” de la computadora, su función es interpretar y ejecutar las instrucciones a través de operaciones básicas: aritméticas y lógicas. lo detallaremos a profunidad más adelante.
+
+Almacenamiento secunadario
+Almacena datos de manera permanente. Es información que la computadora no necesita de manera inmediata para su funcionamiento. Puede almacenar archivos de todo tipo el más común es el disco mecanico pero hay varios como pueden ser los discos solidos, o M.2 que van conectados directamente a la motherboard.
+
+RAM y ROM
+La memoria RAM es el componentes que almacena información de manera temporal. Tiene la particularidad de que el contenido de la misma se elimina cada vez que se apaga la computadora (Efimera).
+● La memoria ROM, por otra parte, almacena información de manera permanente. Guarda todo lo relacionado a la configuración inicial para el arranque de la máquina y funcionamiento básico.
+
+● La placa de sonido permite que la computadora reproducir sonidos a través de auriculares o
+parlantes. También permite recibir sonidos a través de micrófonos.
+
+●tarjeta gráfica, es la encargada de mostrar imágenes en el monitor. lo hablaremos más adelante con profundidad.
+Fuente.
+
+●La fuente de alimentación de una computadora convierte la energía del tomacorriente en el tipo de energía que
+necesita la computadora. Envía la misma a través de cables a la placa madre y a otros componentes.
+
+Los componentes externos de una computadora son todos aquellos dispositivos que utiliza la computadora, pero que no son imprescindibles para su funcionamiento.
+
+Perifericos o componenetes externos
+Son aquellos que se conectan a la CPU para añadir funciones u operaciones a la computadora, pero no son parte esencial de la misma.
+Pueden ser:
+● De entrada: Introducen datos a la computadora.(Teclado, mouse, microfono, scanner)
+● De salida: Extraen datos de la computadora. (Altavoz, Monitor y impesora)
+● Mixtos: Cumplen ambas funciones.(Pantalla tactil, Impresora multifunción, Modem)

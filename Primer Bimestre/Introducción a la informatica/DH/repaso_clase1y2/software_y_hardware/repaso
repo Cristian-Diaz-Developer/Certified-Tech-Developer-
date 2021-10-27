@@ -1,0 +1,38 @@
+El software de sistema es la plataforma sobre la que se asienta el hardware y las aplicaciones informáticas. Este tipo de programa informático está escrito con un lenguaje de programación de características de bajo nivel o de primera generación; esto es, un lenguaje cuyas instrucciones controlan sin intermediarios el hardware como es el caso en el lenguaje de máquina y los lenguajes ensambladores.
+
+El sistema operativo de un equipo informático es un claro ejemplo de software de sistema. El usuario no opera directamente la OS, sino que interactúa con la interfaz gráfica de usuario o GUI proporcionada por este y mediante las aplicaciones instaladas sobre el sistema operativo.
+
+Aparte de los sistemas operativos, dentro del software de sistema también se encuentran las siguientes clases de programas:
+
+Antivirus
+Utilidades de control de disco (herramientas de formateo y similares)
+Controladores de hardware o drivers
+Traductores de lenguajes informáticos
+Cargadores de programas
+Algunas BIOS y UEFI
+Gestores de arranque o bootloaders
+Hipervisores
+El hardware es el soporte físico sobre el que se instala, opera y funciona cualquier software; es decir, sin el hardware, el ordenador no existe.
+
+A lo largo de tiempo, en lo que aparentan ser cuatro generaciones tecnológicas, el hardware ha ido evolucionado de manera lenta pero progresiva. La primera generación, aparecida en 1945 y que duró por once años, se basaba en tubos de vacío. A esta le sucedieron los transistores, empleados desde 1957 hasta 1963. Desde entonces se emplea hardware basado en circuitos integrados. Se predice una cuarta generación, en fase de investigación y prototipado, que emplearía transistores libres de silicio o física cuántica. La llegada de esta cuarta generación es difícil de predecir.
+
+La capacidad operativa (y de computación cuando corresponde) de los primeros componentes no tiene nada que ver con la que disfrutamos hoy en día.
+
+Cuando categorizamos todos estos elementos, una primera clasificación del hardware se puede realizar en base a su ubicación en el sistema informático. Así se hace una división entre el hardware interno, generalmente el que se incluye dentro de una torre, y el hardware externo, todo aquel que no tiene lugar asignado dentro de la caja del ordenador y se sitúa por lo tanto en el rango de acción del usuario, pero fuera de la envolvente de la máquina.
+
+Algunos de los elementos de hardware que se considerarían internos son:
+
+La unidad central de procesamiento o CPU
+Las unidades de disco duro o HDD
+Las unidades de estado sólido o SSD
+Las unidades de disco duro híbrido o SSHD
+Las unidades de lectura de disco (CD, DVD, Blue Ray, disquetes, etcétera)
+La memoria RAM
+Los ventiladores
+El sistema de refrigeración líquida
+El chipset o circuito integrado auxiliar
+Las tarjetas de expansión de audio, vídeo o red
+El módem
+La fuente de alimentación
+La tarjeta gráfica o GPU
+Puertos, enchufes y conectores

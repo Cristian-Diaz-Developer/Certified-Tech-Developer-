@@ -1,0 +1,89 @@
+const asiaScores = [8, 10, 6, 9, 10, 6, 6, 8, 4];
+const euroScores = [8, 10, 6, 8, 10, 6, 7, 9, 5];
+
+let peliculas = ["star wars", "totoro", "rocky", "pulp fiction", "la vida es bella"]
+let peliculas2 = ["toy story", "finding Nemo", "kung-fu panda", "wally", "fortnite"]
+
+function mayusculas(arr){
+    for(let i=0; i <= arr.length-1; i++){
+        arr[i] = arr[i].toUpperCase()
+    }
+    return arr
+}
+
+// peliculas = mayusculas(peliculas)
+
+function pasajeDeElementos(arr1, arr2){
+    for(let i=0; i <= arr2.length-1; i++){
+        arr1.push(arr2[i])
+    }
+    return mayusculas(arr1)
+}
+
+peliculas = pasajeDeElementos(peliculas, peliculas2)
+
+let ultimo = peliculas.pop()
+
+// console.log(peliculas)
+
+function comparacionCalificaciones(cal1, cal2){
+    let comp = []
+    for(let i=0; i <= cal1.length-1; i++){
+        if( cal1[i] === cal2[i] ){
+            comp.push('Iguales')
+        }
+        else{
+            comp.push('Diferentes')
+        }
+    }
+    return comp
+}
+
+let A = [5, 8, 4, 9, 5], B = [8, 7, 8, 6, 8], C = [7, 5, 10, 8, 3]
+
+function puntajePromedio(calificaciones){
+    let suma = 0
+    for(let i=0; i <= calificaciones.length-1; i++){
+        suma = calificaciones[i] + suma
+    }
+    return suma/calificaciones.length
+}
+
+function puntajeMayor(calificaciones){
+    let mayor = 0
+    for(let i=0; i <= calificaciones.length-1; i++){
+        if ( calificaciones[i] > mayor ) {
+            mayor = calificaciones[i]
+        }
+    }
+    return mayor
+}
+
+function competencia(A, B, C){
+
+    let promedios=[], mayores=[], ganadores=[0,0]
+    let promedioMayor=0, puntajeMax=0
+
+    promedios.push(puntajePromedio(A))
+    promedios.push(puntajePromedio(B))
+    promedios.push(puntajePromedio(C))
+
+    mayores.push(puntajeMayor(A)) 
+    mayores.push(puntajeMayor(B))
+    mayores.push(puntajeMayor(C))
+
+    for(let i = 0; i < promedios.length; i++){
+
+        if ( promedios[i]>promedioMayor ){
+            promedioMayor = promedios[i]
+            ganadores[0] = 'El ganador de promedios es el participante '+ (i+1)
+        }
+
+        if ( mayores[i]>puntajeMax ){
+            puntajeMax = mayores[i]
+            ganadores[1] = 'El ganador de puntajes es el participante '+ (i+1)
+        }
+
+    }
+    return ganadores
+}

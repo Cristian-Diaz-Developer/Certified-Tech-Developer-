@@ -1,0 +1,86 @@
+const jsonHelper = require("./jsonHelper");
+
+let carrera = {
+    autos: jsonHelper.leerArchivo("autos"),
+    autosPorTanda: 6,
+    autosHabilitados: function () {
+        return this.autos.filter((auto)=> auto.sancionado === false)
+    },
+    listarAutos: function (arrayAutos) {
+        arrayAutos.forEach((auto)=>{
+            let estado = auto.sancionado ? "sancionado" : "habilitado"
+            console.log(`Piloto: ${auto.piloto}, patente: ${auto.patente}, velocidad: ${auto.velocidad}, peso en kg: ${auto.peso}, estado: ${estado}, cilindrada: ${auto.cilindrada}`)
+        })
+    },
+    buscarPorPatente: function (patente) {
+        return this.autos.find((auto)=> auto.patente === patente)
+    },
+    filtrarPorCilindrada: function (cilindrada) {
+        return this.autosHabilitados().filter((auto)=>auto.cilindrada <= cilindrada)
+    },
+    ordenarPorVelocidad: function () {
+        return this.autos.sort((a,b)=> a.velocidad - b.velocidad)
+    },
+    habilitarVehiculo: function (patente) {
+        let autoEncontrado = this.buscarPorPatente(patente)
+        if (autoEncontrado){
+            autoEncontrado.sancionado = false;
+            jsonHelper.escribirArchivo("autosModif", this.autos);
+            return autoEncontrado;
+        }
+    },
+    generarTanda: function (cilindrada, peso) {
+        let habilitados = this.autosHabilitados();
+        let filtrados = habilitados.filter((auto)=> auto.cilindrada <= cilindrada && auto.peso <= peso);
+       /*  let habilitadosPorCilindrada = this.filtrarPorCilindrada(cilindrada);
+        let filtrados = habilitadosPorCilindrada.filter(
+            (auto) => auto.peso <= peso
+        ); */
+        let tanda = filtrados.slice(0, this.autosPorTanda);
+        return tanda;
+    },
+    pesoPromedio: function (cilindrada, peso) {
+        let sumaTotal = this.generarTanda(cilindrada, peso).reduce((acumulador, auto)=> acumulador = acumulador + auto.peso, 0)
+        console.log(sumaTotal)
+        console.log( this.autosPorTanda)
+        let promedio = sumaTotal / this.autosPorTanda
+        return `El peso promedio de la tanda de vehiculos es de: ${promedio}Kg`
+    },
+    listarPodio: function (tanda) {
+        let ordenados = tanda.sort((a, b)=> b.puntaje - a.puntaje)
+        let ganadores = ordenados.slice(0, 3)
+        console.log(`El ganador es: ${ganadores[0].piloto}, con un puntaje de ${ganadores[0].puntaje}.
+        El segundo puesto es para ${ganadores[1].piloto}, con un puntaje de ${ganadores[1].puntaje}.
+        El tercer puesto es para ${ganadores[2].piloto}, con un puntaje de ${ganadores[2].puntaje}.`)
+    }
+}
+
+
+//
+//console.log(carrera.autos)
+//C
+//console.log(carrera.autosHabilitados())
+
+//D
+//carrera.listarAutos(carrera.autos)
+
+//E
+//console.log(carrera.buscarPorPatente("JOK851"))
+
+//F
+//carrera.listarAutos(carrera.filtrarPorCilindrada(1500))
+
+//G
+//carrera.listarAutos(carrera.ordenarPorVelocidad())
+
+//H
+//console.log(carrera.habilitarVehiculo("JHV223"))
+
+//I
+//carrera.listarAutos(carrera.generarTanda(2000, 1925.29))
+
+//J
+//console.log(carrera.pesoPromedio(2000, 2000))
+
+//K
+carrera.listarPodio(carrera.generarTanda(1500, 2000));
