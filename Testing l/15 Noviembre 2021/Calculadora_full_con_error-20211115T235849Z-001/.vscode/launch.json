@@ -9,7 +9,7 @@
             "type": "pwa-chrome",
             "request": "launch",
             "name": "Launch Chrome against localhost",
-            "url": "http://localhost:5500/calculadora.html",
+            "url": "C:\\Users\\Usuario\\Desktop\\Certified Tech Developer\\Testing l\\17 Noviembre 2021\\programa-listas en javascript\\programa-listas en javascript",
             "webRoot": "${workspaceFolder}"
         }
     ]

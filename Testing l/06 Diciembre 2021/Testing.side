@@ -1,0 +1,88 @@
+{
+  "id": "8c58e26e-637b-4020-8a3b-071d56f3b6be",
+  "version": "2.0",
+  "name": "Testing",
+  "url": "https://playground.digitalhouse.com",
+  "tests": [{
+    "id": "c1a08915-6fc1-44eb-be44-615f7b31a8ff",
+    "name": "Login credenciales correctas",
+    "commands": [{
+      "id": "28b8bf63-7063-413e-b493-4661fb62e2a6",
+      "comment": "",
+      "command": "open",
+      "target": "/login",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9048df33-d6c7-418c-9a94-b538252da46e",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1110x877",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "372027df-ac07-45a1-a44d-a0f45ff99841",
+      "comment": "",
+      "command": "type",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div[3]/div/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "crixtean0922@gmail.com"
+    }, {
+      "id": "35c55465-ea44-49cd-bae1-dc065b7259e3",
+      "comment": "",
+      "command": "click",
+      "target": "id=input-password",
+      "targets": [
+        ["id=input-password", "id"],
+        ["css=#input-password", "css:finder"],
+        ["xpath=//input[@id='input-password']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div[3]/div/form/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3cf9a500-0835-416f-8b26-7ce8c7f8db58",
+      "comment": "",
+      "command": "type",
+      "target": "id=input-password",
+      "targets": [
+        ["id=input-password", "id"],
+        ["css=#input-password", "css:finder"],
+        ["xpath=//input[@id='input-password']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div[3]/div/form/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": "@Cristian10@"
+    }, {
+      "id": "66ba08ae-94a1-4460-aad8-1c19634b8216",
+      "comment": "",
+      "command": "click",
+      "target": "id=SubmitLoginButton",
+      "targets": [
+        ["id=SubmitLoginButton", "id"],
+        ["css=#SubmitLoginButton", "css:finder"],
+        ["xpath=//button[@id='SubmitLoginButton']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div[3]/div/form/button", "xpath:idRelative"],
+        ["xpath=//form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Ingresar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "1ab06e96-746d-4f8d-82b0-667e5feb4046",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["c1a08915-6fc1-44eb-be44-615f7b31a8ff"]
+  }],
+  "urls": ["https://playground.digitalhouse.com/"],
+  "plugins": []
+}
