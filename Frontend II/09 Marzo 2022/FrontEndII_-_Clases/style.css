@@ -1,0 +1,106 @@
+body {
+    font-size: 24px;
+    line-height: 38px;
+    font-family: 'Lucida Console';
+    text-align: justify;
+  }
+
+  main {
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  button {
+    font-size: 16px;
+    padding: 8px 16px;
+    font-family: 'Arial';
+  }
+
+  .bold {
+    font-weight: bold;
+  }
+
+  .rojo {
+    color: red;
+  }
+
+  .imag {
+    width: 1000px;
+  }
+
+  .verdana {
+    font-family: 'Verdana';
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* .imag {
+    width: 1000px;
+  }
+
+  .rojo {
+    color: red;
+  }
+
+  .verdana {
+    font-family: 'Verdana';
+  } */
+
+
