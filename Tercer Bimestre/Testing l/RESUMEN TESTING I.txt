@@ -1,0 +1,77 @@
+Caso de prueba: Condiciones o variables, que determina si una aplicación, sistema,software, caracteristica, comportamiento resulta aceptable o no.
+Entrada conocida y una salida esperada.
+
+RUP Proceso racional unificado establece crear dos casos de prueba, uno negativo y otro positivo.
+1. Adaptar el proceso
+2. Equilibrar prioridades
+3. Demostrar valor iterativamente
+4. Colaboración entre equipos
+5. Enfocarse en la calidad
+6. Elevar el nivel de abstracción 
+
+Caja Negra 
+Partición de equivalencias: cada partición es procesado de la misma manera. 
+Partición de equivlencia valida: Valores aceptados.
+Partición de equivalencia no valido: valores rechazados por el componente.
+Las particiones pueden tener subparticiones.
+Particiones no validas se prueban de forma individual para evitar el enmascaramiento.
+Cobertura se mide = Particiones probadas / particiones identificadas-
+
+Valores Limites: extensión de partición de equivalencia 2 o 3 valores limites.
+cobertura: valores limites probados / valores limites identificados
+
+Tabla de decisión: Pruebas combinatorias
+identificar las condiciones(entradas) acciones resultantes(salidas)
+las columnas de la tabla corresponden a reglas de decisión, cada columna forma una combinación unica y ejecución de acciones asociadas.
+Pueden tener valores booleanos, númericos o intervalos de números.
+Ayuda a identificar las combinaciones importantes de las condiciones y ayuda a encontrar cualquier desfase en los requisitos.
+cobertura: # reglas de decisión / # reglas de decisión totales
+
+Transición de estados: Posibles estados del software, muestra las transiciones válida y potencialmente no válidas.
+Se utiliza en aplicaciones badas en menús.
+Cobertura: # de estados identificados probados / # transiciones identificadas.
+
+Predicción de errores: para antiipar la ocurrencia de equivocaciones, defectos o fallos basados en conocimientos del probador.
+● Cómo ha funcionado la aplicación en el pasado.
+● Equivocaciones comunes en los desarrolladores.
+● Fallos en aplicaciones relacionadas.
+
+Prueba Exploratoria: se diseñan, ejecutan, registran y evaluan pruebas informales y se utiliza para aprender más del funcionamiento de algún componente o sistema.
+se utiliza cuando las especificaciones son escasas, inadecuadas o con restricciones de tiempo.
+
+Prueba basada en lista de comprobación: se diseñan implementa y ejecutan casos de prueba las condiciones de una lista.
+se crean a partir de lo que el cliente considera necesario. puede haber variabilidad y condiciones del contexto, esto ayuda a tener una mayor cobertura.
+Pruebas funcionales y no funcionales.
+
+La prioridad viene del negocio. En este caso uno se pregunta cuán importante es para el negocio que se arregle este defecto. La severidad es técnica. La mayoría de las veces un defecto de alta severidad se convierte en un defecto de alta prioridad, pero no siempre
+
+Severidad enfocada en experiencia de usuario con la app, factores son: cuanto tiempo queda para salir a producción, cuánto tiempo lleva resolver el defecto, quien está disponible para arreglarlo, cuán importante es para el negocio arreglarlo, cual es el impacto, cual la probabilidad de ocurrencia y cuál es el grado de efectos colaterales que puede causar el defecto.
+
+ la prioridad es relativa y la severidad es absoluta. La prioridad puede cambiar con el tiempo, dependiendo el calendario y que otros defectos hay en la lista. La prioridad puede pensarse como el orden con el que los defectos tienen que ser resueltos en un cierto momento. En cambio, la severidad es un análisis de técnico del bug, sin importar el calendario.
+
+Pruebas estaticas: evaluación manual de los productos de trabajo, no requieren la ejecución del software.
+Especificaciones, requisitos de negocio, funcionales y de seguridad.
+● Épicas, historias de usuarios y criterios de aceptación.
+● Especificaciones de arquitectura y diseño.
+● Código.
+● Productos de prueba: planes, casos, procedimientos y guiones de
+prueba.
+● Manuales de usuario.
+
+Ciclo de vida de las pruebas de software
+
+1.Análisis de requisitos: requisitos funcinales y no funcionales identificación y priorización de requisitos. se discrimina las pruebas automaticas y manuales.
+2.Planificación de pruebas describen el alcance y los objetivos despues de comprender el dominio del producto.
+Se definen herrmaientas, responsabilidades, roles y cronograma para completar las pruebas.
+3.Diseño y desarrollo de casos de prueba: se diseñan y desarrollan los casos de prueba, deben ser extensos y cubrir casi todos los casos posibles.
+definición de condiciones. datos de entrada y rusultados esperados.
+4.Configuración del entorno de prueba: ambiente con software y hardware, smoke test en los entornos construidos.
+
+
+Gestión de defectos:
+1.Detectar
+2.Registrar
+3.Investigamiento y seguimiento
+4.Clasificación y resolución
+ 
+

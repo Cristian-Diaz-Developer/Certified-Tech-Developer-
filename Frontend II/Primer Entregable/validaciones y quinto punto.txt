@@ -1,0 +1,46 @@
+datosPersona.nombre = prompt("Ingrese su nombre");
+
+  function validate() {
+    let name = datosPersona.nombre;
+
+    if (name == null || name == "") {
+      alert("Este campo no puede estar vacio. Por favor ingresa un texto");
+      datosPersona.nombre = prompt("Ingrese su nombre");
+      validate();
+    } else if (/^[a-zA-Z]+$/.test(name) == false) {
+      alert("Por favor ingresa un texto");
+      datosPersona.nombre = prompt("Ingrese su nombre");
+      validate();
+    } else {
+      datosPersona.edad = 2022 - prompt("Ingrese su año de nacimiento");
+    }
+  }
+  validate();
+
+  function validateNum() {
+    let num = datosPersona.edad;
+
+    if (isNaN(num) || (num == null && num == "")) {
+      alert("Por favor ingrese un numero");
+      datosPersona.edad = 2022 - prompt("Ingrese su año de nacimiento");
+      validateNum();
+    } else {
+      datosPersona.ciudad = prompt("Ingrese su ciudad");
+    }
+  }
+  validateNum();
+  function validateCity() {
+    let city = datosPersona.ciudad;
+
+    if (city == null || ci
+}
+
+
+
+
+document.addEventListener('keypress', (e) => {
+  if(e.key.toLowerCase() === 'f') {
+    document.getElementById("sobre-mi").classList.remove('oculto');
+  }
+})
+
