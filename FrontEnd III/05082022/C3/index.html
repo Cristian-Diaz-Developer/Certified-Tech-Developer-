@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      crossorigin
+      src="https://unpkg.com/react@17/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"
+    ></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <link rel="stylesheet" href="./css/styles.css">
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="text/babel">
+
+      let headers = ["Home", "About", "Career", "Education"];
+      let infop = ["Name :", "Age :", "Nationality :"];
+      let exp = ['Pirates of the Caribbean','Johnny scissors hand.','Trascendent']
+      let education = ['University of Arts','University of UCLA']
+      let bio ='Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys, standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.'
+      
+      
+      const Header = () => {
+        let routs = headers.map((item, index) => {
+          return <li >{item}</li>;
+        });
+        return <nav className='navBar'>{routs}</nav>;
+      };
+
+      const PersonalInfo = () => {
+        let allInfo = infop.map((item) => {
+          return <li>{item}</li>;
+        });
+        return <ul className='info'>{allInfo}</ul>;
+      };
+
+      const PersonalExperience = () => {
+        let allExp = exp.map((item) => {
+          return <li className='exp'>-  {item}</li>;
+        });
+        return <ul>{allExp}</ul>;
+      };
+
+      const Education = () => {
+        let studies = education.map((item) => {
+          return <li className='education'>-  {item}</li>;
+        });
+        return <ul>{studies}</ul>;
+      };  
+      
+      const Bio = () => {
+        return <p className='bio'>{bio}</p>;
+      };
+        
+      
+
+      ReactDOM.render(
+        <div className='container'>
+          <div class="header">
+             <Header />
+          </div>
+          <div class="img">
+            <img src="./img/chuck.jpg" alt="" className ='avatar' />
+          </div>
+
+          <div class="text">
+            <h2>Personal information</h2>
+            <PersonalInfo />
+            <h2>Experience</h2>
+            <PersonalExperience />
+            <h2>Education</h2>
+            <Education/>
+            <h2>Bio</h2>
+            <Bio/>
+          </div>
+      
+        </div>,
+
+        document.getElementById("root")
+      );
+    </script>
+  </body>
+</html>
+
+
+
+
+ 
+
+

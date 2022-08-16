@@ -1,1 +1,4 @@
 https://dsternlicht.github.io/RESTool/#/characters?search=
+
+link video 
+https://www.youtube.com/watch?v=KpqeqlA7yS0 explicación Jmeter
